@@ -1,4 +1,4 @@
-Number Bubble Hit – Mini Game
+🎯 Number Bubble Hit – Mini Game
 
 A fast reaction-based number clicking game where you must hit the correct bubble before the timer runs out.
 
