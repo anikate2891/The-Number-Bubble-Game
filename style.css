@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(123, 179, 123);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#hero{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#ptop{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(49, 98, 49)
+}
+
+#pbtm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 25px;
+    display: flex;
+    width: 100%;
+    height: calc(100% -100px);
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(49, 98, 49);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.box{
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(48, 100, 43);
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#btn {
+    padding:20px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #5f7b5e;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#btn:hover {
+    transform: scale(1.08);
+}
+
+#btn:active {
+    transform: scale(0.95);
+}
+
+.centerBox {
+    flex-wrap: nowrap !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset {
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: 700;
+    background:#548a52;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.reset:hover {
+    transform: scale(1.08);
+}
+
+.reset:active {
+    transform: scale(0.95);
+}
+
+
+
