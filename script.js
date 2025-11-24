@@ -14,7 +14,7 @@ function startBtn() {
     }
 
     function timeStamp(){
-        let timer = 2;
+        let timer = 60;
         let time = setInterval(function(){
             if (timer > 0) {
                 timer--;
