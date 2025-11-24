@@ -14,7 +14,7 @@ function startBtn() {
     }
 
     function timeStamp(){
-        let timer = 60;
+        let timer = 2;
         let time = setInterval(function(){
             if (timer > 0) {
                 timer--;
@@ -39,21 +39,22 @@ function startBtn() {
     }
 
     function gameOver(){
-        let gameOver = document.querySelector('#pbtm');
+        let gameover = document.querySelector('#pbtm');
+        gameover.innerHTML = "";
 
-        // CLEAR + CENTER MODE
-        gameOver.innerHTML = "";
-        gameOver.classList.add('centerBox');
+        gameover.style.color = `rgb(49, 98, 49)`
+        gameover.innerHTML = `<h1 id='gover'>Time's Up!!</h1>`
+        gameover.classList.add('centerBox');
 
         // RESET BUTTON
         const btn = document.createElement('button');
         btn.classList.add('reset');
         btn.textContent = "One More Try?..";
-        gameOver.appendChild(btn);
+        gameover.appendChild(btn);
 
         btn.addEventListener('click', function(){
             // REMOVE CENTER
-            gameOver.classList.remove('centerBox');
+            gameover.classList.remove('centerBox');
             score = 0;
             document.querySelector('#inScore').textContent = score;
 
@@ -68,7 +69,7 @@ function startBtn() {
     .addEventListener('click', function(dets){
         let check = Number(dets.target.textContent);
         if (check === hitrn) {
-            
+
             hitsound.currentTime = 0;
             hitsound.play().catch(()=>{});
 
