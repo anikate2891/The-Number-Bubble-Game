@@ -40,10 +40,8 @@ function startBtn() {
 
     function gameOver(){
         let gameover = document.querySelector('#pbtm');
-        gameover.innerHTML = "";
+        gameover.innerHTML = `<h1 id='gover' style="color: rgb(49,98,49)">Time's Up</h1>`;
 
-        gameover.style.color = `rgb(49, 98, 49)`
-        gameover.innerHTML = `<h1 id='gover'>Time's Up!!</h1>`
         gameover.classList.add('centerBox');
 
         // RESET BUTTON
@@ -69,7 +67,7 @@ function startBtn() {
     .addEventListener('click', function(dets){
         let check = Number(dets.target.textContent);
         if (check === hitrn) {
-
+            
             hitsound.currentTime = 0;
             hitsound.play().catch(()=>{});
 
