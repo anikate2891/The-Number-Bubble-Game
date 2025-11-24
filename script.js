@@ -1,4 +1,5 @@
 let startbtn = document.querySelector('#btn');
+let hitsound = new Audio('./assets/click.mp3')
 
 function startBtn() {
     startbtn.remove();
@@ -67,6 +68,10 @@ function startBtn() {
     .addEventListener('click', function(dets){
         let check = Number(dets.target.textContent);
         if (check === hitrn) {
+            
+            hitsound.currentTime = 0;
+            hitsound.play().catch(()=>{});
+
             increseScore();
             makeBubble();
             hitNum();
